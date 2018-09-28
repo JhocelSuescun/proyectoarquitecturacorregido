@@ -32,7 +32,7 @@ public class CheckoutController {
     @FXML private Label checkoutUserName;
     @FXML private Label checkoutTotal;
     
-    @FXML TableView<Product> checkoutTable;
+    @FXML private TableView<Product> checkoutTable;
     @FXML private TableColumn<Product, String> checkoutTitleCol;
     @FXML private TableColumn<Product, Double> checkoutPriceCol;
     
@@ -42,7 +42,7 @@ public class CheckoutController {
     private AlertType type = AlertType.INFORMATION;
     private Stage stage;
     public Hyperlink checkoutCartButton;
-    NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(Locale.GERMANY);
+    private NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(Locale.GERMANY);
     
     public void setAlertType(AlertType at) {
         type = at;

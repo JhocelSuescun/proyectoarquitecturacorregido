@@ -32,7 +32,7 @@ public class LibraryController {
     private static final String USERNAME = "root";
     private static final String PASSWORD = "";
     //private final Desktop desktop = Desktop.getDesktop();
-    int userID = Main.getInstance().getLoggedCustomer().getCustomerID();
+    private int userID = Main.getInstance().getLoggedCustomer().getCustomerID();
     
     public void initialize() {
         Statement statement=null;

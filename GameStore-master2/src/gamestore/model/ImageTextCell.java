@@ -18,7 +18,7 @@ import javafx.scene.text.TextAlignment;
 
 public class ImageTextCell extends ListCell<Product> {
     
-    NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(Locale.GERMANY);
+   private NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(Locale.GERMANY);
     
     @Override
     protected void updateItem(Product item, boolean empty) {

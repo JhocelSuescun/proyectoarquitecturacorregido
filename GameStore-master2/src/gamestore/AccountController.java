@@ -36,7 +36,7 @@ public class AccountController implements Initializable {
     
     private Main application;
     
-    NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(Locale.GERMANY);
+    private NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(Locale.GERMANY);
     
     public void setApp(Main application) {
         this.application = application;

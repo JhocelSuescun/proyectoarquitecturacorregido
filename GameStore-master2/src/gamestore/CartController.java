@@ -36,11 +36,11 @@ public class CartController {
     //@FXML private Button checkoutButton;
 
     private MainController mainController;
-    double total = 0 ;
+    private double total = 0 ;
     public Hyperlink updatedCartButton;
     public BorderPane mainBorderPaneForCheckoutUse;
     
-    NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(Locale.GERMANY);
+    private NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(Locale.GERMANY);
        
     public void initialize() {
         cartTable.setPlaceholder(new Label("Your shopping cart is empty..."));

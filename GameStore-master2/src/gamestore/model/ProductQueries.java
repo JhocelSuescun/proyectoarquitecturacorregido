@@ -31,7 +31,7 @@ public class ProductQueries {
             
         } catch (SQLException sqlException) {
             sqlException.printStackTrace();
-            System.exit(1);
+            System.out.println("1");
         }
     }
     

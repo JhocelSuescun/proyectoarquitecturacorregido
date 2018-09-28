@@ -60,7 +60,7 @@ public class MainController {
     
     
     
-    int userID = Main.getInstance().getLoggedCustomer().getCustomerID();
+    private int userID = Main.getInstance().getLoggedCustomer().getCustomerID();
     
     
     public void setApp(Main application) {
@@ -102,7 +102,7 @@ public class MainController {
                         } else {
                             addToCartButton.setText("Add To Cart");
                             addToCartButton.setDisable(false);
-                        };
+                        }
                 }        
         );
         gamesListView.getSelectionModel().select(0);

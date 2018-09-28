@@ -24,7 +24,6 @@ public class RegisterController implements Initializable {
     @FXML private TextField registerCreditCard;    
     @FXML private Label errorLabel;
     
-    private CustomerQueries customerQueries;
     private Main application; 
     private AlertType type = AlertType.INFORMATION;
     private Stage stage;
@@ -58,7 +57,7 @@ public class RegisterController implements Initializable {
     }    
     
     public void processRegister(ActionEvent event) throws IOException {
-        customerQueries = new CustomerQueries();
+       CustomerQueries customerQueries = new CustomerQueries();
         
         if(registerUserName.getText().trim().isEmpty() || registerPassword.getText().trim().isEmpty() || registerEmail.getText().trim().isEmpty() || registerCreditCard.getText().trim().isEmpty() || registerCreditCard.getText().length() != 16 || !(registerCreditCard.getText().matches("[0-9]+")) || !(registerEmail.getText().matches("\\b[a-z0-9._-]+@[a-z0-9.-]+\\.[a-z]{2,}\\b"))) {
             errorLabel.setText("Please enter your credentials correctly.");
